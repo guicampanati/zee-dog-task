@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+body
+{
+  height: 100%;
+  margin: 0;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+.container
+{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.box
+{
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+
+.selector
+{
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.lang-selector-button
+{
+  max-width: 40%;
+  height: auto;
+}
+
+.breed-list
+{
+  width: 50%;
+  margin: 0 auto;
+  color: #0071bc;
+  background: #fff;
+}
+
+.breed-list-input
+{
+  width: 90%;
+  box-sizing: border-box;
+  margin: 8px;
+  padding: 8px;
+}
+
+.breed-list-items
+{
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.breed-list-items li
+{
+  border-bottom: 1px solid #e4e4e4;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .8em 0;
+}
+
+.breed-selector-button
+{
+  max-width: 60%;
+  height: auto;
+}
+
+.breed-return-button
+{
+  position: absolute;
+  max-width: 10%;
+  top: 10px;
+  left: 10px;
+  height: auto;
+}
+
+.disclaimer
+{
+  position: absolute;
+  max-width: 20%;
+  height: auto;
+  right: 20px;
+  bottom: 10vh;
+}
+
+.breed-info h3
+{
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0;
+  color: #fff;
+}
+
+.breed-info p
+{
+  margin: 0;
+  color: #fff;
+}
+
+.breed-info div
+{
+  color: #2d3d8d;
+  margin: 2vw;
+}
+
+.breed-info div span
+{
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.breed-sizes
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  font-size: 0.8em;
+  width: 80vw;
+}
+
+.breed-sizes .size
+{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  padding: 20px;
+  transform: translateY(-30%);
+}
+
+.breed-row
+{
+  height: 5vh;
+}
+
+.breed-column
+{
+  display: inline-block;
+  text-align: right;
+
+}
+
+.breed-column .label
+{
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.breed-return-button-2
+{
+  position: absolute;
+  max-width: 20%;
+  top: 10px;
+  right: 10px;
+  height: auto;
+}
+
+.disclaimer-breed
+{
+  position: absolute;
+  max-width: 20%;
+  height: auto;
+  left: 20px;
+  top: 2vh;
+}
+
+footer
+{
+  position: absolute;
+  width: 100%;
+  background: #000;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-logo
+{
+  height: 10vh;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px)
+{
+  .container
+  {
+    font-size: 0.7rem;
+  }
+
+  .box
+  {
+    flex-flow: column;
+  }
+  .breed-list
+  {
+    width: 80vw;
+  }
+
+  .breed-selector-button
+  {
+    max-width: 80%;
+  }
+
+  .breed-return-button
+  {
+    max-width: 20%;
+  }
+
+  .breed-column .label {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+  .breed-sizes .size
+  {
+    width: 30px;
+    padding: 10px;
+    transform: translateY(-10%);
+    font-size: 0.8em;
+  }
+
+  .disclaimer
+  {
+    max-width: 30%;
+  }
+
+  .disclaimer-breed
+  {
+    max-width: 30%;
+  }
+}
